@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="firebase.json">
+    <link rel="website icon" href="">
+    <title>RICH BERRY</title>
+    <link rel="website icon" href="images/logo2.png">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="glow" id="glow">RICH BERRY</a>
+        <nav class="navbar">
+            <a  href="#about-section" class="nav-link nav-link-ltr" id="about">About</a>
+            <a  href="#pictures" class="nav-link nav-link-ltr" id="farpic">Farm Pictures</a>
+            <a  href="#our products" class="nav-link nav-link-ltr" id="product">Products</a>
+            <a  href="#contact" class="nav-link nav-link-ltr" id="conta">Contact</a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h2>Choose Your Language</h2>
+                <button type="button" id="english" class="button-2">English</button>
+                <button type="button" id="arabic" class="button-1"> العربية</button>
+                <button type="button" id="Francais" class="button-3">Francais</button>
+              
+              </div>
+              
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="iconlang"><i class="fa-sharp fa-solid fa-earth-americas"></i></span>
+              
+            
+        </nav>
+    </header>
+    <section class="main">
+        <div class="front">
+        <h2 id="title_text">This is the Rich Berry website</h2>
+        <h1 id="text_span">Red Fruits</h1>
+        <h3 id="h3_text">Is a Professional Company in The Production of Red Fruits Such as (Strawberries and Raspberries).</h3>
+        <a href="#our products" class="main-button" id="our_product">View Our Products</a>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/people/RICH-BERRY/100089839796670/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rich_berry2024/ target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="logo2">
+            <img src="images/logo2.png" alt="logo2">
+        </div>
+    </section>
+    <section class="about_us" id="about-section">
+        <div>
+            <center id="tit1">ABOUT US</center>
+            <h3 id="tex1">The Rich Berry Company is a business that specializes in growing and selling fresh, organic strawberries and raspberries. 
+                Founded in 2018, the company has grown to become one of the region's leading suppliers of fresh berries. 
+                The company is committed to providing the highest quality berries to its customers. 
+                All of their berries are grown at a specific time and harvested at the peak of ripeness to ensure the best flavor and nutrition,
+                with its commitment to quality and sustainability,the Rich Berry Company is a great choice for anyone looking for fresh, berries with good quality.
+            </h3>
+        </div>
+    </section>
+
+    
+    <section class="pictures" id="pictures">
+        <h2 class="title-cards" id="insdethefarm">Inside The Farm</h2>
+        <div class="content1">
+            <div class="pictures-card">
+                <div class="pictures-image">
+                    <img src="images/rich berry pic.jpg">
+                </div>
+                <div class="pictures-info">
+                    <p class="pictures-category" id="card_text1">The Administration</p>
+                    <strong class="pictures-title">   
+                        <span id="card_span1">Rich Berry Administration</span>
+                    </strong>
+
+                </div>
+
+            </div>
+            <div class="pictures-card">
+                <div class="pictures-image">
+                    <img src="images/strawberry.jpg">
+                </div>
+                <div class="pictures-info">
+                    <p class="pictures-category" id="card_text2">The Plant</p>
+                    <strong class="pictures-title">   
+                        <span id="card_span2">The Strawberry Plant</span>
+                    </strong>
+
+                </div>
+
+            </div>
+            <div class="pictures-card">
+                <div class="pictures-image">
+                    <img src="images/raspberry.jpg">
+                </div>
+                <div class="pictures-info">
+                    <p class="pictures-category" id="card_text3">The Plant</p>
+                    <strong class="pictures-title">   
+                        <span id="card_span3">The Raspberry Plant</span>
+                    </strong>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="our products">
+        <h2 class="title2" id="Our_Products">Our Products</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    &#127827;
+                </div>
+                <div class="info">
+                    <h3 id="cards_text1">Strawberry</h3>
+                    <p id="cards_p1">A strawberry is a small, sweet, red fruit that is a member of the rose family. It is one of the most popular fruits in the world and is enjoyed by people of all ages. Strawberries are a great source of vitamins and minerals, including vitamin C, folate, potassium, and manganese. They are also a good source of dietary fiber, which helps to keep you feeling full and satisfied.</p>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-brands fa-raspberry-pi"></i>
+                </div>
+                <div class="info">
+                    <h3 id="cards_text2">Raspberry</h3>
+                    <p id="cards_p2">Raspberry is a small, edible, red fruit that belongs to the genus Rubus of the rose family. Raspberries are a nutritious and delicious fruit that can provide a variety of health benefits. They are a great source of vitamins, minerals, antioxidants, and dietary fiber, and they can help to reduce inflammation and promote digestive health.</p>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="content2" id="contact">
+        <form onsubmit="sendEmail();reset();return false;">
+            <h3 id="contact_text">Contact Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Gmail" required>
+            <input type="number" id="phone number" placeholder="Your Phone Number" required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit" id="send_text">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p class="footer-title" id="copyright">Copyrights @ RICH BERRY</p>
+       
+        
+        <div class="social-icons">
+            <a href="https://web.facebook.com/people/RICH-BERRY/100089839796670/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rich_berry2024/ target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+                            Email.send({
+                            SecureToken: "93fa41cd-0cfd-4685-b1db-a60860cd4bd1",
+                            To : 'richberry2024@gmail.com',
+                            From : 'abdrahimfreelancer2@gmail.com',
+                            Subject : "New Contact Form Enquiry",
+                            Body : "Name: " +document.getElementById("name").value
+                                +"<br>Email: " +document.getElementById("email").value
+                                +"<br> Phone Number: " +document.getElementById("phone number").value
+                                +"<br> Message: " +document.getElementById("message").value
+                            }).then(
+                            message => alert("Message Send successfully ,we will replay as soon as posible.")
+                            );
+            }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
